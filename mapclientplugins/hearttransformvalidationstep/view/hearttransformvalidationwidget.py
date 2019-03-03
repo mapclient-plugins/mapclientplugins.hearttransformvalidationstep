@@ -53,12 +53,8 @@ class HeartTransformValidationWidget(QtGui.QWidget):
         t = self._transform.getTranslationVector()
 
         t_difference = sub(t, ANSWER_T)
-        print(dot(t_difference, t_difference))
-        print(sqrt(dot(t_difference, t_difference)))
         reshape_r = reshape(r, 9)
         reshape_answer_r = reshape(ANSWER_R, 9)
-        print(reshape_r)
-        print(reshape_answer_r)
         r_difference = sub(reshape_r, reshape_answer_r)
         r_err = sqrt(dot(r_difference, r_difference))
         t_err = sqrt(dot(t_difference, t_difference))
