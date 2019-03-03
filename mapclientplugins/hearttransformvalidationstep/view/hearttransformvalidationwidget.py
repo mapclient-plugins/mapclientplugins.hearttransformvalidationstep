@@ -8,6 +8,8 @@ from mapclientplugins.hearttransformvalidationstep.view.ui_hearttransformvalidat
     import Ui_HeartTransformValidationWidget
 
 
+T_LIMITS = [2, 20]
+R_LIMITS = [0.5, 5]
 ANSWER_T = [7.542893880483713, -30.00245783135635, -12.065013443763675]
 ANSWER_R = [[0.524975715317517, -0.5704818654890634, -0.6316256323764731],
             [-0.20542408183881694, -0.8051023517173368, 0.5564271289754775],
@@ -63,8 +65,8 @@ class HeartTransformValidationWidget(QtGui.QWidget):
 
     def _set_validation_result(self, r_err, t_err):
 
-        r_text, r_colour = _determine_text(r_err, [0.5, 5])
-        t_text, t_colour = _determine_text(t_err, [2, 20])
+        r_text, r_colour = _determine_text(r_err, R_LIMITS)
+        t_text, t_colour = _determine_text(t_err, T_LIMITS)
 
         self._ui.validation_result_label.setText(
             'Validation results: R is <font color="{0}">{1}</font>, T is <font color="{2}">{3}</font>.'
