@@ -1,0 +1,6 @@
+
+<RCC>
+  <qresource prefix="hearttransformvalidationstep">
+    <file>images/utility.png</file>
+  </qresource>
+</RCC>
