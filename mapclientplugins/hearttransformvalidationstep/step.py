@@ -1,4 +1,3 @@
-
 """
 MAP Client Plugin Step
 """
@@ -20,10 +19,10 @@ class HeartTransformValidationStep(WorkflowStepMountPoint):
 
     def __init__(self, location):
         super(HeartTransformValidationStep, self).__init__('Heart Transform Validation', location)
-        self._configured = False # A step cannot be executed until it has been configured.
+        self._configured = False  # A step cannot be executed until it has been configured.
         self._category = 'Utility'
         # Add any other initialisation code here:
-        self._icon =  QtGui.QImage(':/hearttransformvalidationstep/images/utility.png')
+        self._icon = QtGui.QImage(':/hearttransformvalidationstep/images/utility.png')
         # Ports:
         self.addPort(('http://physiomeproject.org/workflow/1.0/rdf-schema#port',
                       'http://physiomeproject.org/workflow/1.0/rdf-schema#uses',
@@ -59,7 +58,7 @@ class HeartTransformValidationStep(WorkflowStepMountPoint):
         :param index: Index of the port to return.
         :param dataIn: The data to set for the port at the given index.
         """
-        self._portData0 = dataIn # hearttransform
+        self._portData0 = dataIn  # hearttransform
 
     def configure(self):
         """
@@ -113,5 +112,3 @@ class HeartTransformValidationStep(WorkflowStepMountPoint):
         d.identifierOccursCount = self._identifierOccursCount
         d.setConfig(self._config)
         self._configured = d.validate()
-
-
