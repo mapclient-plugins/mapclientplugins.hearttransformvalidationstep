@@ -4,7 +4,7 @@ MAP Client Plugin Step
 """
 import json
 
-from PySide import QtGui
+from PySide2 import QtGui
 
 from mapclient.mountpoints.workflowstep import WorkflowStepMountPoint
 from mapclientplugins.hearttransformvalidationstep.configuredialog import ConfigureDialog
@@ -109,7 +109,7 @@ class HeartTransformValidationStep(WorkflowStepMountPoint):
         """
         self._config.update(json.loads(string))
 
-        d = ConfigureDialog()
+        d = ConfigureDialog(self._main_window)
         d.identifierOccursCount = self._identifierOccursCount
         d.setConfig(self._config)
         self._configured = d.validate()
