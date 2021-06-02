@@ -4,9 +4,8 @@ from PySide2 import QtWidgets
 
 from opencmiss.utils.maths.vectorops import sub, dot, reshape
 
-from mapclientplugins.hearttransformvalidationstep.view.ui_hearttransformvalidationwidget\
+from mapclientplugins.hearttransformvalidationstep.view.ui_hearttransformvalidationwidget \
     import Ui_HeartTransformValidationWidget
-
 
 T_LIMITS = [2, 20]
 R_LIMITS = [0.5, 5]
