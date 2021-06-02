@@ -1,6 +1,6 @@
 from math import sqrt
 
-from PySide import QtGui
+from PySide2 import QtWidgets
 
 from opencmiss.utils.maths.vectorops import sub, dot, reshape
 
@@ -16,7 +16,7 @@ ANSWER_R = [[0.524975715317517, -0.5704818654890634, -0.6316256323764731],
             [-0.8259548685779027, -0.16235961445917443, -0.5398498964204104]]
 
 
-class HeartTransformValidationWidget(QtGui.QWidget):
+class HeartTransformValidationWidget(QtWidgets.QWidget):
 
     def __init__(self, parent=None):
         super(HeartTransformValidationWidget, self).__init__(parent)
