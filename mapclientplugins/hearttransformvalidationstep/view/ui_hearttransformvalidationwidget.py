@@ -1,93 +1,135 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'qt\hearttransformvalidationwidget.ui'
-#
-# Created: Sun Mar  3 19:08:16 2019
-#      by: pyside-uic 0.2.15 running on PySide 1.2.4
-#
-# WARNING! All changes made in this file will be lost!
+################################################################################
+## Form generated from reading UI file 'hearttransformvalidationwidget.ui'
+##
+## Created by: Qt User Interface Compiler version 5.15.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
-from PySide import QtCore, QtGui
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+
 
 class Ui_HeartTransformValidationWidget(object):
     def setupUi(self, HeartTransformValidationWidget):
-        HeartTransformValidationWidget.setObjectName("HeartTransformValidationWidget")
+        if not HeartTransformValidationWidget.objectName():
+            HeartTransformValidationWidget.setObjectName(u"HeartTransformValidationWidget")
         HeartTransformValidationWidget.resize(848, 386)
-        self.horizontalLayout = QtGui.QHBoxLayout(HeartTransformValidationWidget)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        self.control_widget = QtGui.QWidget(HeartTransformValidationWidget)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        self.horizontalLayout = QHBoxLayout(HeartTransformValidationWidget)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.control_widget = QWidget(HeartTransformValidationWidget)
+        self.control_widget.setObjectName(u"control_widget")
+        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(1)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.control_widget.sizePolicy().hasHeightForWidth())
         self.control_widget.setSizePolicy(sizePolicy)
-        self.control_widget.setObjectName("control_widget")
-        self.verticalLayout = QtGui.QVBoxLayout(self.control_widget)
-        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.horizontalLayout_2 = QtGui.QHBoxLayout()
-        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.continue_push_button = QtGui.QPushButton(self.control_widget)
-        self.continue_push_button.setObjectName("continue_push_button")
+        self.verticalLayout = QVBoxLayout(self.control_widget)
+        self.verticalLayout.setObjectName(u"verticalLayout")
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.continue_push_button = QPushButton(self.control_widget)
+        self.continue_push_button.setObjectName(u"continue_push_button")
+
         self.horizontalLayout_2.addWidget(self.continue_push_button)
-        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_2.addItem(spacerItem)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer)
+
+
         self.verticalLayout.addLayout(self.horizontalLayout_2)
-        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem1)
+
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout.addItem(self.verticalSpacer)
+
+
         self.horizontalLayout.addWidget(self.control_widget)
-        self.display_widget = QtGui.QWidget(HeartTransformValidationWidget)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(3)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.display_widget.sizePolicy().hasHeightForWidth())
-        self.display_widget.setSizePolicy(sizePolicy)
-        self.display_widget.setObjectName("display_widget")
-        self.verticalLayout_2 = QtGui.QVBoxLayout(self.display_widget)
-        self.verticalLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.verticalLayout_2.setObjectName("verticalLayout_2")
-        spacerItem2 = QtGui.QSpacerItem(20, 47, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem2)
-        self.horizontalLayout_3 = QtGui.QHBoxLayout()
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        spacerItem3 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem3)
-        self.rms_display_label = QtGui.QLabel(self.display_widget)
-        font = QtGui.QFont()
+
+        self.display_widget = QWidget(HeartTransformValidationWidget)
+        self.display_widget.setObjectName(u"display_widget")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy1.setHorizontalStretch(3)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.display_widget.sizePolicy().hasHeightForWidth())
+        self.display_widget.setSizePolicy(sizePolicy1)
+        self.verticalLayout_2 = QVBoxLayout(self.display_widget)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.verticalSpacer_3 = QSpacerItem(20, 47, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer_3)
+
+        self.horizontalLayout_3 = QHBoxLayout()
+        self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_2)
+
+        self.rms_display_label = QLabel(self.display_widget)
+        self.rms_display_label.setObjectName(u"rms_display_label")
+        font = QFont()
         font.setPointSize(40)
         self.rms_display_label.setFont(font)
-        self.rms_display_label.setObjectName("rms_display_label")
+
         self.horizontalLayout_3.addWidget(self.rms_display_label)
-        spacerItem4 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_3.addItem(spacerItem4)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_3.addItem(self.horizontalSpacer_3)
+
+
         self.verticalLayout_2.addLayout(self.horizontalLayout_3)
-        spacerItem5 = QtGui.QSpacerItem(20, 47, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem5)
-        self.horizontalLayout_4 = QtGui.QHBoxLayout()
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        spacerItem6 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem6)
-        self.validation_result_label = QtGui.QLabel(self.display_widget)
-        font = QtGui.QFont()
-        font.setPointSize(32)
-        self.validation_result_label.setFont(font)
-        self.validation_result_label.setObjectName("validation_result_label")
+
+        self.verticalSpacer_2 = QSpacerItem(20, 47, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer_2)
+
+        self.horizontalLayout_4 = QHBoxLayout()
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer_4)
+
+        self.validation_result_label = QLabel(self.display_widget)
+        self.validation_result_label.setObjectName(u"validation_result_label")
+        font1 = QFont()
+        font1.setPointSize(32)
+        self.validation_result_label.setFont(font1)
+
         self.horizontalLayout_4.addWidget(self.validation_result_label)
-        spacerItem7 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
-        self.horizontalLayout_4.addItem(spacerItem7)
+
+        self.horizontalSpacer_5 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_4.addItem(self.horizontalSpacer_5)
+
+
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
-        spacerItem8 = QtGui.QSpacerItem(20, 47, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem8)
-        spacerItem9 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
-        self.verticalLayout_2.addItem(spacerItem9)
+
+        self.verticalSpacer_4 = QSpacerItem(20, 47, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer_4)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.verticalLayout_2.addItem(self.verticalSpacer_5)
+
+
         self.horizontalLayout.addWidget(self.display_widget)
 
+
         self.retranslateUi(HeartTransformValidationWidget)
-        QtCore.QMetaObject.connectSlotsByName(HeartTransformValidationWidget)
+
+        QMetaObject.connectSlotsByName(HeartTransformValidationWidget)
+    # setupUi
 
     def retranslateUi(self, HeartTransformValidationWidget):
-        HeartTransformValidationWidget.setWindowTitle(QtGui.QApplication.translate("HeartTransformValidationWidget", "Heart Transform Validation", None, QtGui.QApplication.UnicodeUTF8))
-        self.continue_push_button.setText(QtGui.QApplication.translate("HeartTransformValidationWidget", "Continue", None, QtGui.QApplication.UnicodeUTF8))
-        self.rms_display_label.setText(QtGui.QApplication.translate("HeartTransformValidationWidget", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
-        self.validation_result_label.setText(QtGui.QApplication.translate("HeartTransformValidationWidget", "TextLabel", None, QtGui.QApplication.UnicodeUTF8))
+        HeartTransformValidationWidget.setWindowTitle(QCoreApplication.translate("HeartTransformValidationWidget", u"Heart Transform Validation", None))
+        self.continue_push_button.setText(QCoreApplication.translate("HeartTransformValidationWidget", u"Continue", None))
+        self.rms_display_label.setText(QCoreApplication.translate("HeartTransformValidationWidget", u"TextLabel", None))
+        self.validation_result_label.setText(QCoreApplication.translate("HeartTransformValidationWidget", u"TextLabel", None))
+    # retranslateUi
 
