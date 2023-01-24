@@ -1,6 +1,6 @@
 from math import sqrt
 
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 
 from opencmiss.utils.maths.vectorops import sub, dot, reshape
 
